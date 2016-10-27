@@ -17,3 +17,23 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+
+function generateInsult(num){
+  var name = prompt("Please input a name: ");
+  //Put all the words in one pool in order to generate the n word insults.
+  //We could also pick one word of each array using Math.random() method.
+  var arr = first_word.concat(second_word, third_word);
+  var result = [];
+  for(var i=0; i<num; i++){
+    result.push(wordSelector(arr));
+  }
+  var words = result.join(" ");
+  alert("Why " + name + ", you " + words + "!");
+}
+
+function wordSelector(newArr){
+  var index = Math.floor((Math.random() * newArr.length));
+  return newArr[index];
+}
+
+generateInsult(7);
