@@ -24,7 +24,7 @@ var primeNums = [];
 
 var primes = function(max){
   for (var i = 2; i <= max; i++){
-    if (isPrime){
+    if (isPrime(i)){
       primeNums.push(i);
     }
   }
