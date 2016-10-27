@@ -22,3 +22,19 @@
 */
 
 // YOUR CODE HERE
+function bottlesOfBeer(n) {
+  for (var i = n; i > 0; i--) {
+    if (i > 1) {
+      console.log(i + "bottles of beer on the wall,");
+      console.log(i + "bottles of beer!");
+      console.log("Take one down and pass it around,");
+    } else if (i === 1) {
+      console.log(i + "bottle of beer on the wall,");
+      console.log(i + "bottle of beer!");
+      console.log(i + "take it down and keep it for yourself");
+      console.log(i + "No more bottles of beer on the wall...");
+    } else {
+      console.log("I SAID THERE'S NO MORE");
+    }
+  }
+}
