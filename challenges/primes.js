@@ -10,3 +10,25 @@
 */
 
 // YOUR CODE HERE
+var isPrime = function(num) {
+  for(var i = 2; i < num; i++){
+    if (num % i === 0){
+      return false;
+    }
+    return true;
+  }
+}
+//console.log(isprime(12));
+
+var primeNums = [];
+
+var primes = function(max){
+  for (var i = 2; i <= max; i++){
+    if (isPrime){
+      primeNums.push(i);
+    }
+  }
+}
+
+primes(19);
+console.log(primeNums);
