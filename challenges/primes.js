@@ -10,3 +10,7 @@
 */
 
 // YOUR CODE HERE
+
+var isPrime(num) = function() {
+  
+}
