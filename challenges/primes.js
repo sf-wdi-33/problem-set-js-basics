@@ -20,10 +20,13 @@ function isPrime(num) {
   }
 }
 
-//I struggled with the second part. 
+//I struggled with the second part.
 function primes(max) {
   var primesArray = [];
-  for (var i = 2; i < num; i++) {
-    if (primesArray)
+  for (var i = 2; i < max; i++) {
+    if (isPrime(i)) {
+      primesArray.push(i);
+    }
   }
+  return primesArray;
 }
