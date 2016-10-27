@@ -22,3 +22,10 @@
 */
 
 // YOUR CODE HERE
+for(var i=5; i>0; i--){
+  var bottle = (i===1)?" bottle":" bottles";
+  console.log(i + bottle + " of beer on the wall,\n" +
+              i + bottle + " of beer!\n" +
+              "Take one down and pass it around,\n" +
+              ((i-1)>0?(i-1):"No more") +" bottles of beer on the wall...\n\n");
+}

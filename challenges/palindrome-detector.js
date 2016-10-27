@@ -21,3 +21,12 @@
 */
 
 // YOUR CODE HERE
+function isPalindrome(s) {
+  s = s.toLowerCase().replace(/\s|[.,:!]/g, "");
+  if(s === s.split("").reverse().join("")){
+    return true
+  }
+  else{
+    return false;
+  }
+}
