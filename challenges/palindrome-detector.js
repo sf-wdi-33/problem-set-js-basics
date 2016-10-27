@@ -33,4 +33,4 @@ var isPalindrome = function (str) {
   }
 }
 
-isPalindrome("mom");
+isPalindrome("hello");
