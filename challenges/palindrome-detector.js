@@ -21,3 +21,10 @@
 */
 
 // YOUR CODE HERE
+
+
+var isPalindrome = function(str) {
+  return str == str.split('').reverse().join('');
+}
+
+/* Can't figure how to do this when there are spaces in the strings and capital letters */
