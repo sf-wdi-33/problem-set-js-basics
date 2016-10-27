@@ -17,3 +17,16 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+
+var generateInsult = function() {
+  numOfInsults = prompt("How many insults do you need?");
+  nameOfInsultee = prompt("Who would you like to insult?");
+  var randInsult = first_word[Math.floor(Math.random())]
+  var randInsult2 = second_word[Math.floor(Math.random())]
+  var randInsult3 = third_word[Math.floor(Math.random())]
+    if (numOfInsults === "1") {
+      alert(nameOfInsultee + " " + "you are a " + randInsult);
+    } else if (numOfInsults === "2") {
+      alert(nameOfInsultee + " " + "you are a " + randInsult + " " + "and a " + randInsult2);
+    }
+  }
