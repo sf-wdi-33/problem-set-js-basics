@@ -28,13 +28,13 @@ function generateInsult(n) {
   var adjectiveOne = adjectiveOne[Math.floor(Math.random() * adjectiveOne.length)];
   var adjectiveTwo = adjectiveTwo[Math.floor(Math.random() * adjectiveTwo.length)];
   var adjectiveCombined = adjectiveOne.concat(adjectiveTwo);
-  var noun = noun[Math.floor() * noun.length)];
+  var noun = noun[Math.floor(Math.random() * noun.length)];
 
-  if (harshness = 1) {
+  if (harshness === 1) {
     alert("Why " + name + ", thou art a " + noun + "!");
-  } else if (harshness = 2) {
-    alert("Why " + name + ", thou art a " + adjectiveCombined " " + noun + "!");
+  } else if (harshness === 2) {
+    alert("Why " + name + ", thou art a " + adjectiveCombined + " " + noun + "!");
   } else {
-    alert("Why " + name + ", thou art a " + adjectiveOne " " + adjectiveTwo + " " + noun + "!");
+    alert("Why " + name + ", thou art a " + adjectiveOne + " " + adjectiveTwo + " " + noun + "!");
   }
 }
