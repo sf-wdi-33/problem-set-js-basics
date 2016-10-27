@@ -23,17 +23,16 @@
 
 // YOUR CODE HERE
 
-var numOfBottles = 5;
-var beerSong = numOfBottles + " " + "bottles of beer on the wall," +
+
+
+for (var numOfBottles = 5; numOfBottles >= 0; numOfBottles--) {
+  var beerSong = numOfBottles + " " + "bottles of beer on the wall," +
       numOfBottles + " " + "bottles of beer!" +
       "Take one down and pass it around," +
       numOfBottles + " " + "bottles of beer on the wall...";
-
-
-for ( ; numOfBottles >= 0; numOfBottles--) {
-  console.log(beerSong);
+  
   if (numOfBottles == 0) {
     numOfBottles = "no more";
-    console.log(beerSong)
   }
+  console.log(beerSong);
 }
