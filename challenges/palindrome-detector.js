@@ -21,3 +21,17 @@
 */
 
 // YOUR CODE HERE
+
+function checkPalindrome(str){
+  //remove all non-alphanumeric characters and change string into lowercase
+  var newStr = str.replace(/[^a-zA-Z0-9]+/g,'').toLowerCase();
+  var length = newStr.length;
+  for(var i=0; i<length/2; i++){
+    if(newStr.charAt(i) !== newStr.charAt(length-1-i)){
+      return false;
+    }
+  }
+  return true;
+}
+
+checkPalindrome("abcdcba");
