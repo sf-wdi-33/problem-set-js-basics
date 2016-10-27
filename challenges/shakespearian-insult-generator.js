@@ -27,6 +27,7 @@ function generateInsult(num){
   for(var i=0; i<num; i++){
     result.push(wordSelector(arr));
   }
+  // change the array into a string 
   var words = result.join(" ");
   alert("Why " + name + ", you " + words + "!");
 }
@@ -35,5 +36,5 @@ function wordSelector(newArr){
   var index = Math.floor((Math.random() * newArr.length));
   return newArr[index];
 }
-
+//test the code
 generateInsult(7);
