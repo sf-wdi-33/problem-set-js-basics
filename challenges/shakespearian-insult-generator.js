@@ -18,6 +18,7 @@ var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skain
 
 // YOUR CODE HERE
 
+
 var generateInsult = function() {
   numOfInsults = prompt("How many insults do you need?");
   nameOfInsultee = prompt("Who would you like to insult?");

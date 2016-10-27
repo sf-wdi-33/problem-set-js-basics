@@ -23,7 +23,6 @@
 // YOUR CODE HERE
 
 
-
 var isPalindrome = function(str) {
   return str == str.split('').reverse().join('');
 }
