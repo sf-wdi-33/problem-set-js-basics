@@ -23,11 +23,11 @@
 // YOUR CODE HERE
 function isPalindrome(input) {
   var reg = /[\W_]/g;
-  var regString = input.toLowerCase().replase(re, '');
+  var regString = input.toLowerCase().replace(reg, '');
   var reverseString = regString.split('').reverse().join('');
   if (regString === reverseString) {
     return true;
   } else {
     return false;
-  }  
+  }
 }
