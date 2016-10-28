@@ -17,3 +17,23 @@ var second_word = ["weather-bitten", "unchin-snouted", "toad-spotted", "tickle-b
 var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skainsmate", "scut", "ratsbane", "pumpion", "puttock", "pignut", "pigeon-egg", "nut-hook", "mumble-news", "moldwarp", "miscreant", "minnow", "measle", "mammet", "malt-worm", "maggot-pie", "lout", "lewdster", "joithead", "hugger-mugger", "horn-beast", "hedge-pig", "harpy", "haggard", "gudgeon", "giglet", "fustilarian", "foot-licker", "flirt-gill", "flax-wench", "flap-dragon", "dewberry", "death-token", "codpiece", "coxcomb", "clotpole", "clack-dish", "canker-blossom", "bum-bailey", "bugbear", "boar-pig", "bladder", "barnacle", "baggage", "apple-john"];
 
 // YOUR CODE HERE
+var insultChoice = prompt('Who would you like to insult?');
+var numInsults = prompt('How insulting do you want to be? Very?, Moderately?, or Not Much?');
+
+function generateInsult() {
+  var notMuch = first_word[Math.random() * first_word.length>>0];
+  var moderately = second_word[Math.random() * second_word.length>>0];
+  var very = third_word[Math.random() * third_word.length>>0];
+
+  if (numInsults === 'Not Much'){
+    alert('Why ' + insultChoice + ', you ' + very);
+  }
+  else if (numInsults === 'Moderately'){
+    alert('Why ' + insultChoice + ', you are a ' + moderately + ' ' + very);
+  }
+  else {
+    alert('Why ' + insultChoice + ', you are a ' + notMuch + ' ' + moderately + ' ' + very);
+  }
+}
+
+generateInsult();
