@@ -21,3 +21,16 @@
 */
 
 // YOUR CODE HERE
+var isPalindrome = function (str) {
+  var reverse=str.split('').reverse().join('');
+  if (reverse===str) {
+    return true
+    console.log('That is a palindrome')
+  }
+  else {
+    return false
+    console.log('That is not a palindrome')
+  }
+}
+
+isPalindrome('hello');
